@@ -1,21 +1,16 @@
-import { Button, Stack } from "@chakra-ui/react";
-
+import React from "react";
+import { BrowserRouter as Switch, Route, Router } from "react-router-dom";
+import Account from "./Pages/Account/Account";
+import Login from "./Pages/Login/Login";
 function App() {
   return (
-    <Stack spacing={4} direction="row" align="center">
-      <Button colorScheme="teal" size="xs">
-        Button
-      </Button>
-      <Button colorScheme="teal" size="sm">
-        Button
-      </Button>
-      <Button colorScheme="teal" size="md">
-        Button
-      </Button>
-      <Button colorScheme="teal" size="lg">
-        Button
-      </Button>
-    </Stack>
+    // <Router>
+    //   <Switch>
+    //     <Route path="/" exact component={Login} />
+    //     <Route path="/account" component={Account} />
+    //   </Switch>
+    // </Router>
+    <Account />
   );
 }
 

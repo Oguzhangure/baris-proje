@@ -1,9 +1,8 @@
 import React from "react";
-import { Button, Text, Input, Box, Center, Flex } from "@chakra-ui/react";
-import MyButton from "../../components/MyButton";
+import { Text, Input, Box, Button, Flex } from "@chakra-ui/react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
 
-function Account() {
+function Lblinput(isim = "Selami") {
   return (
     <Flex
       justifyContent="space-between"
@@ -11,7 +10,7 @@ function Account() {
       p="5"
       backgroundColor="gray.300"
     >
-      <Text fontSize="5xl">Hoşgeldin Sea</Text>
+      <Text fontSize="5xl">Hoşgeldin {isim}</Text>
       <Button
         fontSize="large"
         borderRadius="15"
@@ -30,4 +29,4 @@ function Account() {
   );
 }
 
-export default Account;
+export default Lblinput;

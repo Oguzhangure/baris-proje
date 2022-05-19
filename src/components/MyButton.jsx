@@ -1,17 +1,11 @@
 import React from "react";
-import { Button, Text, Input, Box, Center, Flex } from "@chakra-ui/react";
-import MyButton from "../../components/MyButton";
+import { Link } from "react-router-dom";
+import { Text, Input, Box, Button, Flex } from "@chakra-ui/react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@chakra-ui/icons";
 
-function Account() {
+function MyButton(yazi, to, ...probs) {
   return (
-    <Flex
-      justifyContent="space-between"
-      alignItems="center"
-      p="5"
-      backgroundColor="gray.300"
-    >
-      <Text fontSize="5xl">Hoşgeldin Sea</Text>
+    <Link to={to}>
       <Button
         fontSize="large"
         borderRadius="15"
@@ -23,11 +17,12 @@ function Account() {
         colorScheme="blackAlpha"
         bgColor="black"
         variant="solid"
+        {...probs}
       >
-        Geri
+        {yazi}
       </Button>
-    </Flex>
+    </Link>
   );
 }
 
-export default Account;
+export default MyButton;
