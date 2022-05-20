@@ -11,3 +11,5 @@ root.render(
     </ChakraProvider>
   </React.StrictMode>
 );
+
+// burayı ellemene gerek yok
