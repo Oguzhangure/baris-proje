@@ -130,6 +130,9 @@ function Account() {
           </TabPanels>
         </Tabs>
       </Flex>
+
+      {/* işlem bölümü */}
+
       <Flex
         padding="5"
         borderRadius="15"
